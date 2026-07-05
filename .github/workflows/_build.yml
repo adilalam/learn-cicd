@@ -1,5 +1,5 @@
 # .github/workflows/_build.yml — Stable stage, segment 10
-# Reusable workflow: builds the Astro site by calling the build-astro composite.
+# Reusable workflow: builds the vite site by calling the build-vite composite.
 # Triggered only by workflow_call. Both ci.yml and deploy.yml call this.
 
 name: Build (reusable)
@@ -31,8 +31,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build Astro
-        uses: ./.github/actions/build-astro
+      - name: Build vite
+        uses: ./.github/actions/build-vite
         with:
           node-version: ${{ inputs.node-version }}
           artifact-name: ${{ inputs.artifact-name }}
