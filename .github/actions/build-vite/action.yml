@@ -1,9 +1,9 @@
-# .github/actions/build-astro/action.yml — Stable stage, segment 9
-# Composite action: setup Node, install with cache, build Astro, upload dist/.
+# .github/actions/build-vite/action.yml — Stable stage, segment 9
+# Composite action: setup Node, install with cache, build vite, upload dist/.
 # Consumed by deploy.yml in segment 9 and by ci.yml + _build.yml in segment 10.
 
-name: Build Astro
-description: Install dependencies with npm cache, build the Astro static site, and upload the dist artifact.
+name: Build Vite
+description: Install dependencies with npm cache, build the vite static site, and upload the dist artifact.
 
 inputs:
   node-version:
